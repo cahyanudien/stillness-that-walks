@@ -139,20 +139,26 @@
       <!-- where to buy / read cards (Apple Books instead of GitHub read) -->
       <div class="section-title" id="purchase-books">Where to read</div>
       <div class="purchase-grid">
-        <a href="#" class="purchase-card">
+        <a href="#purchase-books" class="purchase-card disabled-card">
           <span class="purchase-icon">📱</span>
           <span class="purchase-title">Kindle</span>
           <span class="purchase-sub">Amazon</span>
+          <span class="unavailable-badge">Currently Unavailable</span>
         </a>
-        <a href="#" class="purchase-card">
+        <a
+          href="https://play.google.com/store/books/details?id=PhHGEQAAQBAJ"
+          target="_blank"
+          class="purchase-card"
+        >
           <span class="purchase-icon">📖</span>
           <span class="purchase-title">Google Play</span>
           <span class="purchase-sub">Books</span>
         </a>
-        <a href="#" class="purchase-card">
+        <a href="#purchase-books" class="purchase-card disabled-card">
           <span class="purchase-icon">🍎</span>
           <span class="purchase-title">Apple Books</span>
           <span class="purchase-sub">iOS/macOS</span>
+          <span class="unavailable-badge">Currently Unavailable</span>
         </a>
       </div>
 
@@ -233,9 +239,9 @@
       </div>
 
       <!-- call to action buttons -->
-      <div class="action-row">
+      <div class="action-row" id="action-row">
         <a href="#purchase-books" class="btn-primary"> Buy the book → </a>
-        <a href="#" class="btn-secondary"> ⭐ Goodreads </a>
+        <a href="#" class="btn-secondary disabled"> ⭐ Goodreads </a>
       </div>
 
       <!-- footer -->
